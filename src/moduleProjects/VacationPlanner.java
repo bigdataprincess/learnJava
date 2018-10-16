@@ -12,7 +12,7 @@ public class VacationPlanner {
         landArea();
     }
 
-    public static void Greetings(){
+    private static void Greetings(){
         System.out.println((1 + 3 /2-7%3));
         System.out.println("Welcome to Vacation Planner\n");
         Scanner welcome = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class VacationPlanner {
         System.out.println("***********************************");
     }
 
-    public static void  TravelTimeBudget() {
+    private static void  TravelTimeBudget() {
         System.out.println("How many days are you going to spend travelling?: ");
         Scanner budget = new Scanner(System.in);
         Integer days = budget.nextInt();
@@ -53,7 +53,7 @@ public class VacationPlanner {
         System.out.println("***********************************");
     }
 
-    public static void  timeDifference() {
+    private static void  timeDifference() {
         System.out.println("What is the time difference, in hours, between your home and your destination?: ");
         Scanner timeInput = new Scanner(System.in);
         Integer timeDiff = timeInput.nextInt();
@@ -64,7 +64,7 @@ public class VacationPlanner {
     }
 
 
-    public static void landArea(){
+    private static void landArea(){
         System.out.println("What is the square area of your destination in KM? ");
         Scanner squareArea = new Scanner(System.in);
         int input = squareArea.nextInt();

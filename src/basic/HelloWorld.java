@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /*
 * Learn the first building block of a java program
+*
+* This is just a random test principle file
  */
 public class HelloWorld {
     public static void main(String[] args) {
@@ -29,8 +31,32 @@ public class HelloWorld {
     }
 
     private static void learnControlStructure(){
+        for (int i = 0; i <= 10; i++) {
+            System.out.println("+-------+-----+");
+            System.out.println("+-------+-----+");
+        }
 
-    }
+        // Nested loops
+        for ( int i = 0; i < 4; i ++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        // Using user input in loop
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is your first name");
+        String name = input.next();
+        while(name.equals("John")){
+            System.out.println("Its nice to meet you: " + name );
+            name = input.next();
+        }
+        System.out.println("Thank you, comeback soon");
+
+        }
+
 }
 
 
